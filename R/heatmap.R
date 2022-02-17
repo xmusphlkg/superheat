@@ -138,7 +138,8 @@ generate_heat <- function(X,
     ggplot2::scale_x_continuous(name = "", expand = c(0, 0)) +
     ggplot2::guides(fill = ggplot2::guide_colorbar(barwidth = legend.width * 10,
                                                    barheight = legend.height * 10)) +
-    ggplot2::theme(legend.text = ggplot2::element_text(size = legend.text.size)) +
+    ggplot2::theme(legend.text = ggplot2::element_text(size = legend.text.size,
+                                                       family = 'Times New Roman')) +
     theme_heatmap
 
   # add grid lines if desired

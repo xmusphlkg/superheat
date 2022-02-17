@@ -416,11 +416,13 @@ generate_names <- function(name = NULL,
   if (location == "bottom") {
     gg.name <- ggplot2::ggplot(df) +
       ggplot2::geom_text(ggplot2::aes(x = x, y = y, label = name),
-                         size = name.size)
+                         size = name.size,
+                         family = 'Times New Roman')
   } else if (location == "left") {
     gg.name <- ggplot2::ggplot(df) +
       ggplot2::geom_text(ggplot2::aes(x = x, y = y, label = name),
-                         size = name.size, angle = 90)
+                         size = name.size, angle = 90,
+                         family = 'Times New Roman')
   }
 
   gg.name <- gg.name + theme_clust_labels
