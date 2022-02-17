@@ -136,7 +136,8 @@ generate_cluster_label <- function(membership,
                          vjust = "centre",
                          size = left.label.text.size,
                          angle = text.angle,
-                         col = label.text.col) +
+                         col = label.text.col,
+                         family = 'Times New Roman') +
       ggplot2::scale_y_continuous(expand = c(0, 0)) +
       ggplot2::scale_x_continuous(expand = c(0, 0))
 
@@ -172,7 +173,8 @@ generate_cluster_label <- function(membership,
                          vjust = "centre",
                          size = bottom.label.text.size,
                          col = label.text.col,
-                         angle = text.angle) +
+                         angle = text.angle,
+                         family = 'Times New Roman') +
       ggplot2::scale_x_continuous(expand = c(0, 0)) +
       ggplot2::scale_y_continuous(expand = c(0, 0)))
 
@@ -320,7 +322,8 @@ generate_var_label <- function(names,
                          vjust = "centre",
                          size = left.label.text.size,
                          angle = text.angle,
-                         col = label.text.col) +
+                         col = label.text.col,
+                         family = 'Times New Roman') +
       ggplot2::scale_y_continuous(expand = c(0, 0)) +
       ggplot2::scale_x_continuous(expand = c(0, 0))
 
@@ -354,7 +357,8 @@ generate_var_label <- function(names,
                          vjust = "centre",
                          size = bottom.label.text.size,
                          col = label.text.col,
-                         angle = text.angle) +
+                         angle = text.angle,
+                         family = 'Times New Roman') +
       ggplot2::scale_x_continuous(expand = c(0, 0)) +
       ggplot2::scale_y_continuous(expand = c(0, 0))
 
